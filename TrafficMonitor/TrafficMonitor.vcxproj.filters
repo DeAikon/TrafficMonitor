@@ -88,9 +88,39 @@
     <Filter Include="源文件和头文件\公共的类\CalendarHelper">
       <UniqueIdentifier>{9fa66474-d19b-4357-9813-e511bb20c722}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件和头文件\公共的类\AdapterCommon">
+      <UniqueIdentifier>{75cd7f4d-06b2-467e-9960-994560da6e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件和头文件\公共的类\WinVersionHelper">
+      <UniqueIdentifier>{dd5aaacf-0f59-47ca-a738-250b15c6bbbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件和头文件\对话框类\AboutDlg">
+      <UniqueIdentifier>{1f240f1b-347d-4281-a4cf-18bfebfacb6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件和头文件\公共的类\SimpleXML">
+      <UniqueIdentifier>{8c35a0e3-e526-4f2f-9bc2-ed74dd37b238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件和头文件\对话框类\颜色设置对话框\MFCColorDialogEx">
+      <UniqueIdentifier>{dd737159-8653-44d0-bf51-f0e3afad4e5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件和头文件\派生的控件类\CTabCtrlEx">
+      <UniqueIdentifier>{e5835851-f8d8-47dd-9669-f70b6f424386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件和头文件\公共的类\CrashTool">
+      <UniqueIdentifier>{12448ccc-0fa7-4f50-8261-dcb04f068e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件和头文件\对话框类\MessageDlg">
+      <UniqueIdentifier>{645d28e7-da22-44f8-8e33-894109dde4b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件和头文件\公共的类\CVariant">
+      <UniqueIdentifier>{1ca17ad5-07ba-4361-bbeb-fdc5047697fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="res\Acknowledgement.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -189,6 +219,36 @@
     <ClInclude Include="CalendarHelper.h">
       <Filter>源文件和头文件\公共的类\CalendarHelper</Filter>
     </ClInclude>
+    <ClInclude Include="AdapterCommon.h">
+      <Filter>源文件和头文件\公共的类\AdapterCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="WinVersionHelper.h">
+      <Filter>源文件和头文件\公共的类\WinVersionHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>源文件和头文件\对话框类\AboutDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleXML.h">
+      <Filter>源文件和头文件\公共的类\SimpleXML</Filter>
+    </ClInclude>
+    <ClInclude Include="CMFCColorDialogEx.h">
+      <Filter>源文件和头文件\对话框类\颜色设置对话框\MFCColorDialogEx</Filter>
+    </ClInclude>
+    <ClInclude Include="CTabCtrlEx.h">
+      <Filter>源文件和头文件\派生的控件类\CTabCtrlEx</Filter>
+    </ClInclude>
+    <ClInclude Include="crashtool.h">
+      <Filter>源文件和头文件\公共的类\CrashTool</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageDlg.h">
+      <Filter>源文件和头文件\对话框类\MessageDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="CVariant.h">
+      <Filter>源文件和头文件\公共的类\CVariant</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCommonEx.h">
+      <Filter>源文件和头文件\公共的类\DrawCommon</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ListCtrlEx.cpp">
@@ -277,6 +337,36 @@
     </ClCompile>
     <ClCompile Include="CalendarHelper.cpp">
       <Filter>源文件和头文件\公共的类\CalendarHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="AdapterCommon.cpp">
+      <Filter>源文件和头文件\公共的类\AdapterCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="WinVersionHelper.cpp">
+      <Filter>源文件和头文件\公共的类\WinVersionHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>源文件和头文件\对话框类\AboutDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleXML.cpp">
+      <Filter>源文件和头文件\公共的类\SimpleXML</Filter>
+    </ClCompile>
+    <ClCompile Include="CMFCColorDialogEx.cpp">
+      <Filter>源文件和头文件\对话框类\颜色设置对话框\MFCColorDialogEx</Filter>
+    </ClCompile>
+    <ClCompile Include="CTabCtrlEx.cpp">
+      <Filter>源文件和头文件\派生的控件类\CTabCtrlEx</Filter>
+    </ClCompile>
+    <ClCompile Include="crashtool.cpp">
+      <Filter>源文件和头文件\公共的类\CrashTool</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageDlg.cpp">
+      <Filter>源文件和头文件\对话框类\MessageDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="CVariant.cpp">
+      <Filter>源文件和头文件\公共的类\CVariant</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCommonEx.cpp">
+      <Filter>源文件和头文件\公共的类\DrawCommon</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

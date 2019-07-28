@@ -27,6 +27,7 @@ protected:
 	//控件变量
 	CColorStatic m_text_color_static;
 	CColorStatic m_back_color_static;
+	CColorStatic m_trans_color_static;
 	CToolTipCtrl m_toolTip;
 	CComboBox m_unit_combo;
 	CButton m_hide_unit_chk;
@@ -35,6 +36,7 @@ protected:
 	CComboBox m_digit_number_combo;
 
 	void DrawStaticColor();
+	void IniUnitCombo();
 
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
 
@@ -62,4 +64,7 @@ public:
 	afx_msg void OnBnClickedSpecifyEachItemColorCheck();
 	afx_msg void OnCbnSelchangeDoubleClickCombo();
 	afx_msg void OnBnClickedHorizontalArrangeCheck();
+	afx_msg void OnBnClickedSeparateValueUnitCheck();
+	afx_msg void OnBnClickedUnitByteRadio();
+	afx_msg void OnBnClickedUnitBitRadio();
 };

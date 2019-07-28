@@ -1,3 +1,4 @@
-<version>1.73</version>
-<link>https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.73/TrafficMonitor_V1.73.7z</link>
-<contents>新增：多语言支持，增加英语；\n新增：字体设置支持粗体、斜体、下划线等字体样式；\n新增：历史流量统计中的日历视图；\n修正：当悬浮窗在右下角时，有时程序启动后悬浮窗会往左或往上移动一段距离的问题；\n配置文件转移到C:\Users\用户名\AppData\Roaming\TrafficMonitor目录下，防止由于程序所在目录无法写入数据导致配置文件无法保存的问题；\n新增：网速数据位数设置的选项；修正有时当网速超过10M/s时数据显示的全的问题。</contents>
+<version>1.77</version>
+<link>https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.77/TrafficMonitor_V1.77_x86.7z</link>
+<link_x64>https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.77/TrafficMonitor_V1.77_x64.7z</link_x64>
+<contents>增加任务栏窗口透明色设置，修正任务栏为白色时任务栏窗口文字颜色无法设置为黑色的问题（在“选项”——“任务栏窗口设置”中设置透明色）\n新增程序崩溃时显示崩溃信息的功能\n修正显示任务栏窗口的情况下，资源管理器重启时会导致屏幕闪烁的问题\n新增鼠标指向通知区图标时显示监控信息\n修正使用蓝牙网络时无法显示网速的问题\n新增x64的版本\n其他细节方面的改进</contents>
