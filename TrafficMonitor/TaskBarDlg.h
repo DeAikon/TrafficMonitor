@@ -21,7 +21,6 @@ public:
 	virtual ~CTaskBarDlg();
 
 	CToolTipCtrl m_tool_tips;
-	CMenu m_menu;	//右键菜单
 
 	void ShowInfo(CDC* pDC); 	//将信息绘制到控件上
 	void TryDrawStatusBar(CDrawCommon& drawer, const CRect& rect_bar, int usage_percent); //绘制CPU/内存状态条
@@ -29,6 +28,7 @@ public:
 	void TryDrawGraph(CDrawCommon& drawer, const CRect &value_rect, CList<int,int> &list);		// 绘制CPU/内存动态图
 
 	bool AdjustWindowPos();	//设置窗口在任务栏中的位置
+	void ApplyWindowTransparentColor();
 
 // 对话框数据
 #ifdef AFX_DESIGN_TIME
@@ -44,8 +44,9 @@ protected:
 	CRect m_rcBar;		//初始状态时任务栏窗口的矩形区域
 	CRect m_rcMin;		//初始状态时最小化窗口的矩形区域
 	CRect m_rect;		//当前窗口的矩形区域
-	int m_window_width;		//窗口宽度
-	int m_window_width_s;	//不显示CPU和内存利用率时的窗口宽度
+	int m_window_width_full;		//显示所有信息时窗口宽度
+	int m_window_width_net_speed;	//只显示网速时的窗口宽度
+	int m_window_width_cpu_memory;	//只显示CPU和内存利用率时的窗口宽度
 	int m_window_height;
 	int m_up_lable_width;	//上传标签的宽度
 	int m_down_lable_width;	//下载标签的宽度
@@ -71,10 +72,13 @@ protected:
 
 	CDC* m_pDC{};		//窗口的DC，用来计算窗口的宽度
 
-	bool IsTaskbarOnTopOrBottom();		//判断任务栏是否在屏幕的顶部或底部，如果是则返回false，如果任务栏在屏幕两侧，则返回false
+	void CheckTaskbarOnTopOrBottom();		//检查任务栏是否在屏幕的顶部或底部，并将结果保存在m_taskbar_on_top_or_bottom中
 	CString GetMouseTipsInfo();		//获取鼠标提示
 
 	void AddHisToList(CList<int,int> &list, int current_usage_percent);		//将当前利用率数值添加进链表
+
+	int GetWindowWidth();
+	int GetWindowHeight();
 
 public:
 	void SetTextFont();
@@ -86,6 +90,14 @@ public:
 
 	bool GetCannotInsertToTaskBar() const { return m_connot_insert_to_task_bar; }
 	int GetErrorCode() const { return m_error_code; }
+    bool IsTasksbarOnTopOrBottom() { return m_taskbar_on_top_or_bottom; }
+
+	static bool IsShowCpuMemory();
+	static bool IsShowNetSpeed();
+	static bool IsShowUp();
+	static bool IsShowDown();
+	static bool IsShowCpu();
+	static bool IsShowMemory();
 
 	DECLARE_MESSAGE_MAP()
 
